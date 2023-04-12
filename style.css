@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+    /*height: 100vh;*/
     box-sizing: border-box;
     background-color:#FFFFFF;
     color: #000000;
@@ -19,7 +19,7 @@ body {
 }
 
 .apresentacao {
-    margin: 8% 15%;
+    padding: 3% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,15 +80,29 @@ body {
     color: #000000;
 }
 
+.apresentacao__link__links:hover{
+    background-color: #4169E1;
+    padding: 0.5%;
+}
+
 .apresentacao__conteudo__imagem{
     width: 480px;
 }
 
+.section {
+    border-color: red;
+    border-radius: 10%;
+    border-style: solid;
+    display: flex;
+}
+
 .rodape {
     background-color: #87CEFA;
+    color: #000000;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    padding: 23px;
 }
 
