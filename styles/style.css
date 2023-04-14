@@ -31,7 +31,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: "Montserrat', sans-serif";
-    font-size: 25px;
+    font-size: 1,5625rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -42,31 +42,32 @@ body {
 }
 
 .apresentacao {
-    padding: 2% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 84px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
     
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 25px;
+    font-size: 1,5625rem;
     font-family: 'Krona One', sans-serif;
 }
 
 .apresentacao__conteudo__conteudo {
-    font-size: 25px;
+    font-size: 1.56rem;
     font-family: 'Montserrat', sans-serif;
-    width: 593px;
-    height: 144px;    
+    /*width: 593px;
+    height: 144px;*/    
 }
 
 .apresentacao__link {
@@ -79,10 +80,11 @@ body {
 }
 
 .apresentacao__link__subtitulo {
+    font-size: 25px;
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    
 }
 
 .apresentacao__link__links {
@@ -90,13 +92,13 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 200px;
+    width: 50%;
     text-align: center;
+    border-radius: 8px;
     border: 3px inset var(--cor-secundaria) ;
-    font-size: 15px;
+    font-size: 1,5625rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-style: normal;
     text-decoration-line: none;
     padding: 10px 0;
     color: var(--cor-secundaria);
@@ -108,21 +110,40 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    text-decoration: none;
+    font-size: 1,5625rem;
     color: var(--cor-secundaria);
 }
 
 .apresentacao__conteudo__imagem{
-    width: 480px;
+    width: 450px;
 }
 
 .rodape {
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
     text-align: center;
-    font-size: 20px;
+    font-size: 1,5625rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     padding: 10px;
 }
 
+@media (max-width: 1280px){
+    .cabecalho{
+        padding: 5%;
+    }
+    
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
