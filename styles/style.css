@@ -86,7 +86,7 @@ body {
 }
 
 .apresentacao__link__links {
-    /background-color: var(--cor-terciaria);
+    background-color: var(--cor-terciaria);
     display: flex;
     justify-content: center;
     gap: 16px;
